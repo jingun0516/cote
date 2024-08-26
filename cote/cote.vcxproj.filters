@@ -16,6 +16,9 @@
     <Filter Include="소스 파일\greedy">
       <UniqueIdentifier>{9d7edcd5-4223-4fcd-9b8d-d1dff65f614d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\needtocheck">
+      <UniqueIdentifier>{12c579d3-9ea8-46d5-a625-9ca9973b749e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="18532.cpp">
@@ -73,7 +76,10 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="pm72411.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\needtocheck</Filter>
+    </ClCompile>
+    <ClCompile Include="pm12936.cpp">
+      <Filter>소스 파일\needtocheck</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
