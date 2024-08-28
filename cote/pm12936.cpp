@@ -25,12 +25,12 @@ vector<int> solution(int n, long long k) {
         for (int i = 1; i <= temp; i++) {
             if (check[i]) continue;
 
-            if (k <= next) {
+            if (k <= next) {          
                 answer.push_back(i);
                 check[i] = true;
                 break;
             }
-            else {
+            else {                      // 단위보다 작을 때 까지 빼주면 k의 위치가 나옴
                 k -= next;
             }
         }
