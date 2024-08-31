@@ -93,5 +93,23 @@
     <ClCompile Include="1449.cpp">
       <Filter>소스 파일\greedy</Filter>
     </ClCompile>
+    <ClCompile Include="20115.cpp">
+      <Filter>소스 파일\greedy</Filter>
+    </ClCompile>
+    <ClCompile Include="20365.cpp">
+      <Filter>소스 파일\greedy</Filter>
+    </ClCompile>
+    <ClCompile Include="11000check.cpp">
+      <Filter>소스 파일\greedy</Filter>
+    </ClCompile>
+    <ClCompile Include="14659.cpp">
+      <Filter>소스 파일\greedy</Filter>
+    </ClCompile>
+    <ClCompile Include="25192.cpp">
+      <Filter>소스 파일\greedy</Filter>
+    </ClCompile>
+    <ClCompile Include="1890.cpp">
+      <Filter>소스 파일\dp</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
