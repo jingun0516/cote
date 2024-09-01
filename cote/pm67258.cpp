@@ -10,46 +10,40 @@
 
 using namespace std;
 
-int solution(string s) {
-    int answer = INT_MAX;
-    int len = s.length();
-    if (len == 1) return 1;         // 문자열 길이가 1일 경우 for문이 진행되지 않으니 예외처리
-    for (int i = 1; i <= len / 2; i++)
-    {
-        string temp = "";
-        string comp = s.substr(0, i);
-        int cnt = 1;
-        for (int j = i; j < len; j = j+i)
-        {
-            string tempStr = s.substr(j, i);
-            if (tempStr == comp) cnt++;
-            else {
-                if (cnt != 1)
-                {
-                    temp += to_string(cnt) + comp;
-                }
-                else
-                {
-                    temp += comp;
-                }
-                comp = tempStr;
-                cnt = 1;
+vector<int> solution(vector<string> gems) {
+    vector<int> answer;
+
+
+    set<string> gemsSet(gems.begin(), gems.end());
+    int gemsSize = gemsSet.size();
+    int left = 0, right = 0;
+    map<string, int> gemCount;
+
+    // [left, right] 에 다 들어있으면 left를 줄여서 최소 범위 만들기
+    // 아니면 right를 늘려서 포함시키기
+    gemCount[gems[0]] = 1;
+
+    set<string> tempSet;
+    while (right < gems.size()) {
+        if (gemCount.size() == gemsSize) {
+            if (answer.empty() || (right - left < answer[1] - answer[0])) {
+                answer = { left + 1, right + 1 };
             }
-            if (j + i >= len)   // 포문이 더 이상 진행되지 않을 시에 남은 문자열 추가
-            {
-                if (cnt != 1)       
-                {
-                    temp += to_string(cnt) + comp;
-                }
-                else
-                {
-                    temp += comp;
-                }
+            if (gemCount[gems[left]] == 1) {
+                gemCount.erase(gems[left]);
+            }
+            else {
+                gemCount[gems[left]]--;
+            }
+
+            left++;
+        }
+        else {
+            right++;
+            if (right < gems.size()) {
+                gemCount[gems[right]]++;
             }
         }
-
-        int strSize = temp.size();
-        answer = min(answer, strSize);
     }
 
     return answer;
@@ -57,9 +51,9 @@ int solution(string s) {
 
 int main()
 {
-    string s = "abcabcabcabcdededededede";
+    vector<string> gems = { "DIA", "RUBY", "RUBY", "DIA", "DIA", "EMERALD", "SAPPHIRE", "DIA" };
     
-    cout << solution(s);
+    solution(gems);
 }
 
 // https://school.programmers.co.kr/learn/courses/30/lessons/67258
