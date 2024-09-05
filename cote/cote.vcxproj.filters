@@ -57,9 +57,6 @@
     <ClCompile Include="16139.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="1916.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="pm132266.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -124,6 +121,9 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="2512.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1977.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
