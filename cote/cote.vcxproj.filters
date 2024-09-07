@@ -25,6 +25,9 @@
     <Filter Include="소스 파일\twoPointer">
       <UniqueIdentifier>{1a039429-6ac5-425d-89fa-567f7042cc6c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\dfsbfs">
+      <UniqueIdentifier>{bc8477f3-3dbe-4053-b6d3-030306e0c999}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="18532.cpp">
@@ -128,6 +131,9 @@
     </ClCompile>
     <ClCompile Include="2156.cpp">
       <Filter>소스 파일\dp</Filter>
+    </ClCompile>
+    <ClCompile Include="pm67259.cpp">
+      <Filter>소스 파일\dfsbfs</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
