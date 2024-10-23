@@ -362,3 +362,4 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 /cote/1450notyet.cpp
+/cote/4583notyet.cpp
