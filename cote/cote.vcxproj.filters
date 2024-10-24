@@ -147,7 +147,13 @@
     <ClCompile Include="pm12946_hanoi.cpp">
       <Filter>소스 파일\needtocheck</Filter>
     </ClCompile>
-    <ClCompile Include="4583.cpp">
+    <ClCompile Include="4583notyet.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="pm134239.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="18228.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
